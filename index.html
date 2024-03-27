@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: #3edcff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 350px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            background: linear-gradient(to bottom, #4ECDC4, #3EDCFF);
+            text-align: center;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .container:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+        }
+        .header {
+            background-color: #7200d5;
+            color: #fff;
+            padding: 20px 0;
+            border-radius: 20px 20px 20px 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: normal;
+        }
+        .form-container {
+            padding: 20px 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #000000;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            text-align: left;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #7200d5;
+        }
+        input[type="submit"] {
+            width: calc(100% - 20px);
+            padding: 12px;
+            background-color: #7200d5;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #5a00a8;
+        }
+        .footer {
+            margin-top: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #7200d5;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer a:hover {
+            color: #5a00a8;
+        }
+        .decoration {
+            position: relative;
+        }
+        .shape {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            width: 200px;
+            height: 200px;
+            background-color: #7200d5;
+            border-radius: 50%;
+            transform: translateX(-50%) rotate(45deg);
+            transition: background-color 0.3s ease;
+        }
+        .shape:hover {
+            background-color: #5a00a8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>SASTRA Deemed University Central Library</h1>
+        </div>
+        <div class="form-container">
+            <form id="loginForm">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required><br>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required><br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+        <div class="footer">
+            <p>Forgot your password? <a href="#">Reset here</a></p>
+        </div>
+        
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            if (username === '126003269' && password === '126003269') {
+                window.location.href = 'file:///C:/Users/ssuha/Desktop/suhaila/minor/home%20page/index.html#';
+            } else {
+                alert('Invalid username or password');
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
